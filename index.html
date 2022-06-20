@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>عابر الكلية التقنية</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light py-0 bg-light" style="background-color:#004c99">
+        <div class="container-fluid" style="background-color:#004c99">
+            <a class="navbar-brand border-0 " href="#"><img src="imgs/logo.jpeg" class="w-75" alt="Logo Page"></a>
+            <button class="navbar-toggler outline-0 border-0 " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav" href="#" style="color:white;">احسب نسبتك الموزونة</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="ad my-5 text-center bg-gray">
+            <div class="container px-3">
+                <div class="row justify-content-center py-5">
+
+                    <h1 class="bb" style="font-size: 48px; color:#0000ff;">
+                        عابر الكلية التقنية</h1>
+                    <div class="col-lg-6 col-10 my-4 mx-2">
+                        <h1 class="mb-3">احسب/ي نسبتك الموزونة للتقديم على الدبلوم التقني </h1>
+                        <div class="d-flex justify-content-start mb-2">
+                            <div class="select-type fs-4">
+                                <label class="fw-bold ms-5">حدد مسارك</label>
+                                <select id="type" class="py-1 px-2">
+                                    <option value="علمي" selected>علمي</option>
+                                    <option value="مسار آخر">مسار آخر</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center flex-column flex-md-row">
+                            <div class="col-lg-6 col-10 border border-1 mx-auto">
+                                <form class="degree">
+                                    <p class="fw-bold">درجاتك</p>
+                                    <div class="d-flex justify-content-start mb-2">
+                                        <label class="fw-bold ms-auto" for="high-school">الثانوية</label>
+                                        <input type="text" id="highSchool">
+                                    </div>
+                                    <div class="d-flex justify-content-start mb-2">
+                                        <label class="fw-bold ms-auto" for="abilety">القدرات</label>
+                                        <input type="text" id="ability">
+                                    </div>
+                                    <div class="d-flex justify-content-start mb-2">
+                                        <label class="fw-bold ms-auto" for="achievement">تحصيلي</label>
+                                        <input type="text" id="achievement">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-6 col-10 border border-1 mx-auto">
+                                <form class="uni">
+                                    <p class="fw-bold">آلية المفاضلة في الدبلوم</p>
+                                    <div class="d-flex justify-content-start mb-2">
+                                        <label class="fw-bold ms-auto w-50">الثانوية:</label>
+                                        <label class="fw-bold ms-auto w-50" id="total-highSchool">50%</label>
+
+                                    </div>
+                                    <div class="d-flex justify-content-start mb-2">
+                                        <label class="fw-bold ms-auto w-50">القدرات:</label>
+                                        <label class="fw-bold ms-auto w-50" id="total-ability">30%</label>
+                                    </div>
+                                    <div class="d-flex justify-content-start mb-2">
+                                        <label class="fw-bold ms-auto w-50">تحصيلي:</label>
+                                        <label class="fw-bold ms-auto w-50" id="total-achievement">20%</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <button class="btn w-auto my-3 btn-primary btnCalc border-0">احسب</button>
+                        <p class="result fw-bold "></p><br>
+                        <span class="text-danger fs-4">ملاحظات: </span>
+                        <p class="fs-5 my-2"><span class="text-danger fs-4">* </span>
+                            أولوية القبول لخريجي المعاهد الصناعية و التشييد و العمارة
+                        </p>
+                        <p class="fs-5 my-2"><span class="text-danger fs-4">* </span>
+                            الافضلية لحديثي التخرج من لم يمر على تخرجه سنة يحصل على افضلية وبعده خريج السنة السابقة
+                            وهكذا تحسب .. </p>
+                        <p class="fs-5 my-2"><span class="text-danger fs-4">* </span>
+                            مع العلم من ليس لديه تحصيلي يدخل المفاضلة عادي
+                        </p>
+                        <br>
+                        <a href="https://t.me/abr20kk/3558"
+                            class="btn w-auto mt-3 btn-info btn-date border-0 text-white py-2 " target="_blank">
+                            مواعيد التسجيل في الكليات</a><br> <br> <br>
+                    </div>
+                    <div class="col-lg-6 col-10 my-4">
+                        <h1 class="mb-3">احسب/ي معدل القبول للبكالوريوس التقني </h1>
+
+                        <div class="row justify-content-center flex-column flex-md-row">
+                            <div class="col-lg-6 col-10 border border-1 mx-auto">
+                                <form class="degree">
+                                    <p class="fw-bold">درجاتك</p>
+                                    <div class="d-flex justify-content-start mb-2">
+                                        <label class="fw-bold ms-auto" for="average">معدلك</label>
+                                        <input type="text" id="average">
+                                    </div>
+                                    <div class="d-flex justify-content-start mb-2">
+                                        <label class="fw-bold ms-auto" for="en">اللغة الإنجليزية</label>
+                                        <input type="text" id="en">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-lg-6 col-10 border border-1 mx-auto">
+                                <form class="uni">
+                                    <p class="fw-bold">آلية المفاضلة في البكالوريوس</p>
+                                    <div class="d-flex justify-content-start mb-2">
+                                        <label class="fw-bold ms-auto w-50">المعدل:</label>
+                                        <label class="fw-bold ms-auto w-50">%60</label>
+
+                                    </div>
+                                    <div class="d-flex justify-content-start mb-2">
+                                        <label class="fw-bold ms-auto w-50">الإنجليزية:</label>
+                                        <label class="fw-bold ms-auto w-50">%30</label>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <button class="btn w-auto my-3 btn-primary btnDegree border-0">احسب</button>
+                        <p class="resultDegree fw-bold "></p>
+
+                        <p class="fs-5 my-2"><span class="text-danger fs-4">ملاحظات: </span>
+                        </p>
+                        <p class="fs-5 my-2"><span class="text-danger fs-4">* </span>
+                            تبقى 10% من آلية القبول تكون
+                            حسب سنة تخرجك بمعنى: خريج هذه السنة يحصل على 10% كاملة أما خريج السنة الماضية %8 وهكذا تحسب
+                        </p>
+                        <ul class="text-end fs-5" type="circle">
+                            <li>فترة الحصول على الشهادة:
+                                <ul type="square">
+                                    <li class="my-2"> اختبار كفايات اللغة الإنجليزية Step ثلاث سنوات من تاريخ الاختبار
+                                    </li>
+                                    <li class="my-2">
+                                        برنامج اللغة الإنجليزية المكثف ثلاث سنوات من تاريخ الحصول على الشهادة, على أن
+                                        يكون لدى المتقدم نسبة من 100 وكذلك أحد المستويات (A1,A2,B1,B2,C1,C2) ليتم أعتماد
+                                        الشهادة.
+                                    </li>
+                                    <li class="my-2">
+                                        أيضاً هناك أختبارات أخرى تغنيك عن اختبار STEP مثل برنامج اللغة الإنجليزية
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+
+
+
+                    <div class="following mt-0 pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center text-center pb-5">
+
+
+                                <p class="fs-4 text-end" position=" center">
+
+                                <div class="following mt-0 pb-5">
+                                    <div class="container"><br><br>
+                                        <div class="row justify-content-center text-center pb-5">
+                                            <h2>لمتابعة الأخبار الحصرية وموعد التقديم تابعنا عبر حساباتنا
+                                            </h2>
+                                            <div
+                                                class="col-7 d-flex flex-lg-row flex-column justify-content-around align-items-center">
+                                                <a href="https://t.me/abr20kk"
+                                                    class="text-black text-decoration-none d-flex flex-column align-items-center my-3"
+                                                    target="_blank">
+                                                    <img src="imgs/Telegram_logo.svg.webp" class="img-fluid"
+                                                        alt="fb-logo">
+                                                    قناة عابر الكليات التقنية تيلجرام
+                                                </a>
+                                                <a href="https://youtube.com/channel/UCS1b2ldySDlKM7yhaevoe8A"
+                                                    class="text-black text-decoration-none d-flex flex-column align-items-center  my-3"
+                                                    target="_blank">
+                                                    <img src="imgs/YouTube_full-color_icon_(2017).svg.webp"
+                                                        class="img-fluid" alt="youtubeLogo">
+                                                    <br>
+                                                    يوتيوب عابر الكلية التقنية
+                                                </a>
+                                                <a href="https://twitter.com/abr20k/status/1490983702947635200?s=21&t=tb3IvcXvrK-eQQyLcQS76g"
+                                                    class="text-black text-decoration-none d-flex flex-column align-items-center my-3"
+                                                    target="_blank">
+                                                    <img src="imgs/Twitter-logo.svg.webp" class="img-fluid"
+                                                        alt="twitterlogo">
+                                                    تويتر عابر الكليات التقنية
+                                                </a>
+
+                                                <a href="https://www.snapchat.com/add/abr20k"
+                                                    class="text-black text-decoration-none d-flex flex-column align-items-center my-3"
+                                                    target="_blank">
+                                                    <img src="imgs/snaplogo.jpg" class="img-fluid" alt="snaplogo">
+                                                    سناب عبر الكلية التقنية
+
+                                                </a>
+
+                                            </div>
+                                        </div><br><br>
+                                        <h2 class="pp"> أسئلة شائعة : </h2><br>
+                                        <p>
+                                        <h3><span class="mm">* </span>هل الكلية التقنية حكومية ؟</h3><br>
+                                        نعم </p><br>
+                                        <p>
+                                        <h3><span class="mm">* </span> هل هي لخريجي الثانوية ؟</h3><br>
+                                        نعم </p><br>
+                                        <p>
+                                        <h3><span class="mm">* </span> هل فيها مكافأة ؟</h3><br>
+                                        نعم للفترة الصباحية </p><br>
+                                        <p>
+                                        <h3><span class="mm">* </span> كم مكافأة الكلية التقنية ؟</h3><br>
+                                        ٩٩٠ ريال </p>
+                                        <br>
+                                        <p>
+                                        <h3><span class="mm">* </span>هل هناك فترة مسائية ؟</h3><br>
+                                        نعم </p><br>
+                                        <p>
+                                        <h3><span class="mm">* </span> هل مجانية ؟</h3><br>
+                                        لا برسوم </p><br>
+                                        <p>
+                                        <h3><span class="mm">* </span> هل يستطيع خريج الدبلوم او البكالوريوس التقديم
+                                            عليها ؟</h3><br>
+                                        نعم </p><br>
+                                        <p>
+                                        <h3><span class="mm">* </span> هل اقدر اخذ دبلوم وبعده بكالوريوس بالتقنية ؟</h3>
+                                        <br>
+                                        نعم أساسًا نظام الكلية التقنية سنتين ونص دبلوم وبعدها اذا تبي تكمل بكالوريوس
+                                        تكمل سنتين
+                                        وتاخذ شهادة بكالوريوس </p><br>
+                                        <p>
+                                        <h3><span class="mm">* </span> هل اقدر اخش من الثانوية للبكالوريوس التقني على
+                                            طول؟</h3><br>
+                                        لا لازم اول دبلوم </p><br>
+                                        <p>
+                                        <h3><span class="mm">* </span> هل الفترة المسائية لك مكافاة ؟</h3><br>
+                                        لا </p> <br>
+                                        <p>
+                                        <h3><span class="mm">* </span>هل الكفايات مطلوب في الدبلوم ؟</h3>
+                                        <br>
+                                        لا </p><br>
+                                        <p>
+                                        <h3> <span class="mm">* </span>هل اقدر اصبح ضابط او مدرب اذا تخرجت من بكالوريوس
+                                            التقنية ؟</h3><br>
+                                        اي </p><br>
+                                        <p>
+                                        <h3> <span class="mm">* </span>لو قدمت سابقًا ارجع اقدم عادي ؟</h3><br>
+                                        نعم لازم ترجع تقدم من جديد
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+    </main>
+    <footer class="text-center text-white py-3 w-100">
+        جميع الحقوق محفوظة لدى عابر الكلية التقنية 2022&copy;
+    </footer>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

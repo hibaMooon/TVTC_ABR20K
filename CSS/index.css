@@ -1,0 +1,72 @@
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    position: relative;
+    min-height: 100vh;
+    background-color: white;
+}
+.btn w-auto my-3 btn-primary btnCalc border-0:hover{background-color: white;}
+
+.pp{color:red;
+
+}
+.bb{text-shadow:1px 1px 1px darkred; color:red;}
+.oo{width:70px; height:70px;}
+
+h3{color:#0066cc}
+.navbar navbar-expand-lg navbar-light py-0 bg-light{background-color: #004c99;}
+
+a.navbar-brand {
+    width: 100px;
+	
+}
+.mm{color : black;}
+
+
+.uni {
+    color: black;
+	
+}
+
+.navbar-nav {
+    width: fit-content;
+	
+}
+
+.nav-item {
+    font-size: 14px;
+}
+
+.navbar-toggler:active {
+    box-shadow: 0;
+	 
+}
+
+.nav-item .nav-link.active  {
+    color:white;
+	background-color: #004c99;
+}
+
+form input {
+    width: 100px;
+}
+
+.btn-calc {
+    background-color: #337ab7;
+}
+
+.following a {
+    font-size: 12px;
+}
+
+.following a img {
+    width: 80px;
+}
+
+.btn-date {
+    display: none;
+}
+
+footer {
+    background-color: #004c99;
+    bottom: 0;
+}
